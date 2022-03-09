@@ -1,0 +1,24 @@
+siwapp_deployment:
+  loadsim:
+    - name: loadsim-1
+      ip: 172.16.238.101
+  haproxy_app:
+    - name: haproxyweb-1
+      ip: 172.16.237.101
+  app:
+    - name: websrv-1
+      ip: 172.16.237.102
+    - name: websrv-2
+      ip: 172.16.237.103
+    - name: websrv-3
+      ip: 172.16.237.104
+  haproxy_db:
+    - name: haproxydb-1
+      ip: 172.16.237.105
+  db:
+    - name: dbsrv-1
+      ip: 172.16.237.106
+    - name: dbsrv-2
+      ip: 172.16.237.107
+    - name: dbsrv-3
+      ip: 172.16.237.108
