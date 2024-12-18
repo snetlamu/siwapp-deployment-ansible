@@ -1,24 +1,24 @@
 siwapp_deployment:
   loadsim:
-    - name: loadsim-1
+    - name: ACME-SW-siwapp-load-simulator-1
       ip: 172.16.238.101
   haproxy_app:
-    - name: haproxyweb-1
+    - name: ACME-SW-siwapp-haproxy-app-1
       ip: 172.16.237.101
   app:
-    - name: websrv-1
+    - name: ACME-SW-siwapp-app-1
       ip: 172.16.237.102
-    - name: websrv-2
+    - name: ACME-SW-siwapp-app-2
       ip: 172.16.237.103
-    - name: websrv-3
+    - name: ACME-SW-siwapp-app-3
       ip: 172.16.237.104
   haproxy_db:
-    - name: haproxydb-1
+    - name: ACME-SW-siwapp-haproxy-db-1
       ip: 172.16.237.105
   db:
-    - name: dbsrv-1
+    - name: ACME-SW-siwapp-db-1
       ip: 172.16.237.106
-    - name: dbsrv-2
+    - name: ACME-SW-siwapp-db-2
       ip: 172.16.237.107
-    - name: dbsrv-3
+    - name: ACME-SW-siwapp-db-3
       ip: 172.16.237.108

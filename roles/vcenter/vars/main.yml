@@ -1,24 +1,22 @@
 ---
 # vcenter deployment vars
-vcenter: vcenter-prod.securemobility.net
-vcenter_username: jlunde@securemobility.net
-vcenter_password: [changeMe]
-naming_prefix: prod-
+vcenter: 
+vcenter_username: 
+vcenter_password: 
+naming_prefix: 
 
 # Only set if using deployment_type = 'static'
 address_dns_servers:
-- 172.16.210.70
-- 172.16.210.71
-- 8.8.8.8
-address_search_domain: securemobility.net
-
-datacenter: SMLab RCDN
-cluster: SMLabTet
-folder: Tetration Hosts
-template: cent7
-datastore: MGMT-SRV05DS1
-app_network: Tetration Vl37 (172.16.237.X)
-db_network: Tetration Vl37 (172.16.237.X)
-haproxy_app_network: Tetration Vl37 (172.16.237.X)
-haproxy_db_network: Tetration Vl37 (172.16.237.X)
-loadsim_network: Tetration Vl38 (172.16.238.X)
+  - 172.16.210.70
+  - 172.16.210.71
+  - 8.8.8.8
+address_search_domain: acme.local
+datacenter: TME
+folder: ACME-Tetration-Hosts
+template: CentOS9-Base
+datastore: disk72-2-raid0
+app_network: ACME-SW-application
+db_network: ACME-SW-db
+haproxy_app_network: ACME-SW-haproxyapp
+haproxy_db_network: ACME-SW-haproxydb
+loadsim_network: ACME-SW-loadsim
